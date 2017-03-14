@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 
-from PIL import Image
-import sys
 import os
+import sys
 from itertools import groupby
+
+from PIL import Image
 
 
 def main():
@@ -30,7 +31,6 @@ def main():
             x = tuple(list(element) + [len(list(list_of_elements))])
             print("<td style=\"background-color:rgba(%d, %d, %d); margin:0; padding: 0; height: 1px; width: 1px;\" colspan=\"%d\"></td>" % x)
         print("</tr>")
-
     print("</table>")
 
 
